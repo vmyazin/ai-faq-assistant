@@ -10,9 +10,7 @@ create table if not exists documents (
   metadata jsonb default '{}'::jsonb,
   embedding vector(1536),
   url text,
-  title text,
-  -- Add indexes for better performance
-  constraint documents_pkey primary key (id)
+  title text
 );
 
 -- Create an index on the embedding column for faster similarity searches
