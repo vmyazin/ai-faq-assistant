@@ -52,7 +52,7 @@ ai-faq-assistant/
 
 ### Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 18+ and pnpm
 - Supabase account
 - OpenAI API key
 - Cloudflare account (for Workers)
@@ -62,8 +62,7 @@ ai-faq-assistant/
 ```bash
 git clone <your-repo-url>
 cd ai-faq-assistant
-npm install
-cd workers && npm install && cd ..
+pnpm install
 ```
 
 ### 2. Set Up Supabase
@@ -114,13 +113,13 @@ NEXT_PUBLIC_WORKERS_API_URL=https://your-worker.workers.dev
 
 5. Deploy the worker:
    ```bash
-   npm run deploy
+   pnpm run workers:deploy
    ```
 
 ### 5. Run the Development Server
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
@@ -213,7 +212,7 @@ Send a chat message and get an AI response.
 Deploy to Vercel:
 
 ```bash
-npm install -g vercel
+pnpm install -g vercel
 vercel
 ```
 
@@ -222,22 +221,21 @@ Or use your preferred hosting platform (Netlify, AWS, etc.)
 ### Deploy Cloudflare Workers
 
 ```bash
-cd workers
-npm run deploy
+pnpm run workers:deploy
 ```
 
 ## Development Scripts
 
 ```bash
 # Next.js development
-npm run dev          # Start Next.js dev server
-npm run build        # Build for production
-npm run start        # Start production server
-npm run lint         # Run ESLint
+pnpm run dev          # Start Next.js dev server
+pnpm run build        # Build for production
+pnpm run start        # Start production server
+pnpm run lint         # Run ESLint
 
 # Cloudflare Workers
-npm run workers:dev     # Start worker in dev mode
-npm run workers:deploy  # Deploy worker to Cloudflare
+pnpm run workers:dev     # Start worker in dev mode
+pnpm run workers:deploy  # Deploy worker to Cloudflare
 ```
 
 ## Customization
