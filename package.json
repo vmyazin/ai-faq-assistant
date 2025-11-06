@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "workers:dev": "cd workers && npm run dev",
-    "workers:deploy": "cd workers && npm run deploy"
+    "workers:dev": "pnpm --filter ai-faq-workers dev",
+    "workers:deploy": "pnpm --filter ai-faq-workers deploy"
   },
   "dependencies": {
     "next": "^15.0.0",

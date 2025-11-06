@@ -54,7 +54,7 @@ This guide will walk you through setting up the AI FAQ Assistant from scratch.
 ### Install Wrangler
 
 ```bash
-npm install -g wrangler
+pnpm install -g wrangler
 ```
 
 ### Login to Cloudflare
@@ -92,7 +92,7 @@ wrangler secret put OPENAI_API_KEY
 ### Deploy Worker
 
 ```bash
-npm run deploy
+pnpm run workers:deploy
 ```
 
 Copy the deployed URL (e.g., `https://ai-faq-workers.your-subdomain.workers.dev`)
@@ -119,8 +119,7 @@ NEXT_PUBLIC_WORKERS_API_URL=https://ai-faq-workers.your-subdomain.workers.dev
 ### Install Dependencies
 
 ```bash
-npm install
-cd workers && npm install && cd ..
+pnpm install
 ```
 
 ## Step 5: Test Locally
@@ -128,7 +127,7 @@ cd workers && npm install && cd ..
 ### Start Development Server
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Test the Application
@@ -159,7 +158,7 @@ curl -X POST http://localhost:3000/api/crawl \
 
 1. Install Vercel CLI:
    ```bash
-   npm install -g vercel
+   pnpm install -g vercel
    ```
 
 2. Deploy:
@@ -176,8 +175,7 @@ curl -X POST http://localhost:3000/api/crawl \
 ### Deploy Worker to Production
 
 ```bash
-cd workers
-npm run deploy
+pnpm run workers:deploy
 ```
 
 ### Update Production URLs
