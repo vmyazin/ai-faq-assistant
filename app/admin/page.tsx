@@ -145,7 +145,7 @@ export default function AdminPage() {
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">3.</span>
                 <span>
-                  Click "Crawl Page" to index the content with AI embeddings
+                  Click &ldquo;Crawl Page&rdquo; to index the content with AI embeddings
                 </span>
               </li>
               <li className="flex items-start">
@@ -163,8 +163,8 @@ export default function AdminPage() {
             <h3 className="font-semibold text-blue-900 mb-2">Example Selectors:</h3>
             <ul className="text-sm text-blue-800 space-y-1">
               <li><code className="bg-blue-100 px-2 py-1 rounded">main</code> - Main content area</li>
-              <li><code className="bg-blue-100 px-2 py-1 rounded">.content</code> - Elements with "content" class</li>
-              <li><code className="bg-blue-100 px-2 py-1 rounded">#faq</code> - Element with "faq" ID</li>
+              <li><code className="bg-blue-100 px-2 py-1 rounded">.content</code> - Elements with &ldquo;content&rdquo; class</li>
+              <li><code className="bg-blue-100 px-2 py-1 rounded">#faq</code> - Element with &ldquo;faq&rdquo; ID</li>
               <li><code className="bg-blue-100 px-2 py-1 rounded">article</code> - Article elements</li>
             </ul>
           </div>
