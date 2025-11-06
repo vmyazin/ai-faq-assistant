@@ -1,0 +1,21 @@
+name = "ai-faq-workers"
+main = "src/index.ts"
+compatibility_date = "2024-11-06"
+compatibility_flags = ["nodejs_compat"]
+
+# Environment variables (set these via wrangler secret put or dashboard)
+# SUPABASE_URL
+# SUPABASE_ANON_KEY
+# OPENAI_API_KEY
+
+[observability]
+enabled = true
+
+# Routes for different endpoints
+[[routes]]
+pattern = "*/api/crawl"
+zone_name = "your-domain.com"
+
+[[routes]]
+pattern = "*/api/chat"
+zone_name = "your-domain.com"
